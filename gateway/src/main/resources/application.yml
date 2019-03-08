@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true

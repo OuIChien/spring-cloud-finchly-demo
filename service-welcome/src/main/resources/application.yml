@@ -5,7 +5,18 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/
+    enabled : false
 
 spring:
   application:
     name: welcome
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+
+
+service:
+  upload-root: C:\\Users\\Bekcy\\Downloads\\upload
+
+
